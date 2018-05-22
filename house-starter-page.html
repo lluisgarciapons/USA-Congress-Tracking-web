@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>House Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <div class="container">
+                <img class="logo" src="style/images/logo-tgif.png" alt="logo_image"><img>
+            </div>
+            <nav id="navbar" class="navbar navbar-inverse">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home-starter-page.html">Home</a></li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senate-starter-page.html">Senate</a></li>
+                                <li><a href="#">House</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senate-attendance-starter-page.html">Senate Attendance</a></li>
+                                <li><a href="house-attendance-starter-page.html">House attendance</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senate-party-loyalty-starter-page.html">Senate Party Loyalty</a></li>
+                                <li><a href="house-party-loyalty-starter-page.html">House Party Loyalty</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--                    <p class="navbar-text">House Page</p>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="mailto:info@tgif.net"><span class="glyphicon glyphicon-envelope"></span> info@tgif.net</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ol id="b-global" class="breadcrumb b-global container">
+                <li class="breadcrumb-item"><a href="#">Congress 113</a></li>
+                <li class="breadcrumb-item active">House</li>
+            </ol>
+        </header>
+
+        <!--Table container-->
+        <div id="container" class="container">
+            <div class="col-xs-8">
+                <h2>Congressmen</h2>
+                <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+                <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+            </div>
+            <div class="my_table">
+                <table id="senate-data" class="table table-hover header-fixed">
+                    <thead id="table_head" class="thead">
+                        <tr>
+                            <th>NAME</th>
+                            <th>
+                                <div class="party">
+                                    <div class="checkboxes">
+                                        <div><label><input type='checkbox' id='r' name='party' value='R' checked>Rep</label></div>
+                                        <div><label><input type='checkbox' id='d' name='party' value='D' checked>Dem</label></div>
+                                        <div><label><input type='checkbox' id='i' name='party' value='I' checked>Ind</label></div>
+                                    </div>
+                                    <div class="party_title">
+                                        PARTY
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="state">
+                                    <div class="dropdown">
+                                        <select id="dropdown_filter" name="state">
+                                            
+                                            </select>
+                                        <div>
+                                            STATE
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th><a id="sort_seniority" class="pointer">SENIORITY<span id="sort_seniority_btn" class="caret"></span></a></th>
+                            <th><a id="sort_votes" class="pointer">% OF VOTES WITH PARTY<span id="sort_votes_btn" class="caret"></span></a></th>
+                        </tr>
+                    </thead>
+                    <tbody id='table_body'>
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="no_table">
+            <div id="spinnerBig" class="spinnerBig"></div>
+
+            </div>
+        </div>
+
+        <div class="navbar navbar-inverse nav_footer">
+            <div class="container">
+
+                <p class="navbar-text footer"><span class="glyphicon glyphicon-copyright-mark"></span> 2018 TGIF | All rights Reserved</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+
+    <!-- my js -->
+    <script src="js/todo-prueva1.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+                starterHouse();
+            })
+    </script>
+</body>
+</html>

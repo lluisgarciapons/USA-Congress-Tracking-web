@@ -1,0 +1,377 @@
+/*BODY, CONTENT*/
+
+.body {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body_container {
+    min-height: 398px;
+}
+
+.squared {
+    height: 320px;
+    border-bottom: 4px dotted #e08a25cd;
+}
+
+.col-xs-8 {
+    border-bottom: 4px dotted #e08a25cd;
+}
+
+.scroll {
+    height: 200px;
+    overflow-y: auto;
+}
+
+h1 {
+    margin-left: -20px;
+    margin-top: 10px;
+    display: inline-block !important;
+    font-family: 'Boogaloo', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    color: #e08a25;
+}
+
+
+/*IMAGES*/
+
+.logo {
+    height: 100px;
+    margin: 20px;
+}
+
+.top-logo {
+    display: flex;
+    align-items: center;
+}
+
+.data-img {
+    text-align: center;
+}
+
+.content-img {
+    width: 100%;
+}
+
+
+/*NAVBAR*/
+
+.navbar-inverse {
+    background-color: #EEA249;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #e08a25 !important;
+    border-radius: 5px;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #e08a25;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #9e6119;
+}
+
+.navbar-inverse .navbar-nav > .open > a {
+    background-color: #EEA249 !important;
+    color: #e08a25 !important;
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    border: none;
+    background-color: #ffffffbc;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.dropdown-menu > li > a {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.dropdown-menu > li:nth-child(2) {
+    border-bottom: 2px dotted #e08a25;
+    border-radius: 100%;
+}
+
+.dropdown-menu > li > a:hover {
+    font-weight: bold;
+    color: #EEA249;
+    background-color: transparent;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #fff;
+}
+
+.more_margin {
+    margin-top: 72px !important;
+}
+
+.navbar-text {
+    color: white !important;
+}
+
+
+/*BREADCRUMB*/
+
+.breadcrumb > .active {
+    color: #EEA249;
+}
+
+.breadcrumb-item > a {
+    color: #EEA249;
+}
+
+.breadcrumb-item > a:link {
+    color: #EEA249;
+}
+
+.b-global {
+    background-color: transparent;
+    font-size: 14px;
+}
+
+
+/*TABLE*/
+
+tbody > tr > td > a {
+    color: #e08a25;
+}
+
+tbody > tr > td > a:link {
+    color: #e08a25;
+}
+
+tbody > tr > td > a:hover {
+    color: #e08a25;
+}
+
+#senate-data tr > th {
+    width: 100%;
+}
+
+#table_body td {
+    text-align: center;
+}
+
+#senate-data thead th {
+    text-align: center;
+}
+
+#senate-data thead th:first-child {
+    text-align: left;
+    width: 100%;
+}
+
+#table_body td:nth-child(1) {
+    text-align: left;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.thead tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tbody {
+    display: block;
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+.rows_starter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rows_starter td {
+    width: 100%;
+    justify-content: center;
+}
+
+
+/*NO MATCHES TABLE*/
+
+.no_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 170px;
+}
+
+.no_table p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #988791de;
+}
+
+
+/*LINKS*/
+
+a:link {
+    color: #3093cb;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*READ MORE / READ LESS*/
+
+#summary a.collapsed:after {
+    content: '+ Read More';
+    color: #e08a25;
+}
+
+#summary a:not(.collapsed):after {
+    content: '- Read Less';
+    color: #e08a25;
+}
+
+
+/*CARET*/
+
+.caret {
+    margin-left: 5px;
+}
+
+.caret-up {
+    border-bottom: 4px solid #000000;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    margin-left: 5px;
+    margin-top: 5px;
+    content: "";
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    width: 0;
+}
+
+
+/*FILTERS*/
+
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+label {
+    margin: 0 3px !important;
+}
+
+.state {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sort_votes,
+#sort_seniority {
+    color: black;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+.nav_footer {
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center !important;
+    float: none;
+}
+
+
+/*LOADAER*/
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  background-color: #EEA249ab;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.spinnerBig {
+  width: 100px;
+  height: 100px;
+  background-color: #EEA249ab;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}

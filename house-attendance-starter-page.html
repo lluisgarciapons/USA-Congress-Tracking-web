@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>House Attendance</title>
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <div class="container">
+                <img class="logo" src="style/images/logo-tgif.png" alt="logo_image"><img>
+            </div>
+            <nav id="navbar" class="navbar navbar-inverse">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home-starter-page.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senate-starter-page.html">Senate</a></li>
+                                <li><a href="house-starter-page.html">House</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senate-attendance-starter-page.html">Senate Attendance</a></li>
+                                <li><a href="house-attendance-starter-page.html">House attendance</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+        <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="senate-party-loyalty-starter-page.html">Senate Party Loyalty</a></li>
+                                <li><a href="house-party-loyalty-starter-page.html">House Party Loyalty</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--                    <p class="navbar-text">House Attendance</p>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="mailto:info@tgif.net"><span class="glyphicon glyphicon-envelope"></span> info@tgif.net</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ol id="b-global" class="breadcrumb b-global container">
+                <li class="breadcrumb-item"><a href="#">Attendance</a></li>
+                <li class="breadcrumb-item active">House</li>
+            </ol>
+        </header>
+        <!--Table container-->
+        <div id="container" class="container">
+            <div class="squared col-xs-6">
+                <h2>Attendance</h2>
+                <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+                <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+            </div>
+
+            <div class="squared col-xs-6">
+                <h2>Senate at a glance</h2>
+                <table id="table_glance" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>Number of Reps</th>
+                            <th>% Voted with Prty</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body_glance">
+
+                    </tbody>
+                </table>
+                <div id="spinner1" class="spinner"></div>
+            </div>
+
+            <div class="squared col-xs-6">
+                <h2>Least Engaged (Bottom 10%)</h2>
+                <div class="scroll">
+                    <table id="least_engaged" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Number of Missed Votes</th>
+                                <th>% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_body_least">
+
+                        </tbody>
+                    </table>
+                    <div id="spinner2" class="spinner"></div>
+                </div>
+            </div>
+
+            <div class="squared col-xs-6">
+                <h2>Most Engaged (Top 10%)</h2>
+                <div class="scroll">
+                    <table id="most_engaged" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Number of Missed Votes</th>
+                                <th>% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_body_most">
+
+                        </tbody>
+                    </table>
+                    <div id="spinner3" class="spinner"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="navbar navbar-inverse nav_footer">
+            <div class="container">
+
+                <p class="navbar-text footer"><span class="glyphicon glyphicon-copyright-mark"></span> 2018 TGIF | All rights Reserved</p>
+
+            </div>
+        </div>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- my js -->
+        <script src="js/todo-prueva1.js"></script>
+        <script>
+            $(document).ready(function() {
+                attendanceHouse();
+            })
+        </script>
+    </div>
+</body>
+</html>
